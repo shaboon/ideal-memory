@@ -7,43 +7,73 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Footer from "./components/footer";
 
+import Galaxy from "./assets/photos/12_generated.jpg";
+import Earth from "./assets/photos/vecteezy_half-earth-planet-space_10436376.jpg";
+import Waves from "./assets/svgs/stacked-waves-haikei.svg";
+
 import Portfolio from "./pages/portfolio";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
 
   return (
-    <div className="App h-screen w-screen bg-black bg-gradient-to-t from-current to-gray-700 grid grid-cols-5 grid-rows-5 gap-4">
-      <header className="App-header col-span-3 row-span-3 m-8"></header>
+    <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-t from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
+      <Parallax pages={4}>
+        <ParallaxLayer offset={0} factor={1}>
+          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
+            <img src={Galaxy} alt="Vector cartoon space background"></img>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0.7} factor={0.2}>
+          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
+            <img
+              src={Earth}
+              alt="Vector cartoon space to earth background"
+            ></img>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1.75}>
+          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
+            <p>Scroll down</p>
+          </div>
+        </ParallaxLayer>
 
-      <Parallax pages={3}>
-        <ParallaxLayer offset={0}>
+        <ParallaxLayer offset={3} speed={0.5}></ParallaxLayer>
+
+        <ParallaxLayer offset={0 - 1} speed={0.5}>
           <div className="bg-black bg-gradient-to-t from-current to-gray-700">
-            <p>Scroll down</p>
-            <h1 className="intro text-gray-200 text-5xl">
-              <code className="underline">
-                console.log("Hi, my name is Sean Haboon")
-              </code>
-            </h1>
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1}>
-          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
-            <p>Scroll down</p>
-            <section className="row-span-2 col-start-5 row-start-3 m-8">
-              <p className="text-gray-200 text-2xl">
-                I am a full stack web developer with a passion for creating
-                applications that are both functional and visually appealing. I
-                am proficient in HTML, CSS, JavaScript, and React. I am also
-                experienced in Node.js, Express, MySQL, and MongoDB. I am a
-                quick learner and eager to expand my knowledge and skills.
-              </p>
-            </section>
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={2}>
-          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
-            <p>Scroll down</p>
+            <code>Hi, My Name is Sean Haboon</code>
+            <img src={Waves} alt="Vector cartoon waves background"></img>
+            <svg
+              id="visual"
+              viewBox="0 0 1920 1080"
+              width="1920"
+              height="1080"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+            >
+              <path
+                d="M0 131L29.2 138.2C58.3 145.3 116.7 159.7 174.8 159.7C233 159.7 291 145.3 349.2 139.8C407.3 134.3 465.7 137.7 523.8 141.2C582 144.7 640 148.3 698.2 144.8C756.3 141.3 814.7 130.7 872.8 116.3C931 102 989 84 1047.2 76.8C1105.3 69.7 1163.7 73.3 1221.8 78.7C1280 84 1338 91 1396.2 89.2C1454.3 87.3 1512.7 76.7 1570.8 85.7C1629 94.7 1687 123.3 1745.2 123.3C1803.3 123.3 1861.7 94.7 1890.8 80.3L1920 66L1920 0L1890.8 0C1861.7 0 1803.3 0 1745.2 0C1687 0 1629 0 1570.8 0C1512.7 0 1454.3 0 1396.2 0C1338 0 1280 0 1221.8 0C1163.7 0 1105.3 0 1047.2 0C989 0 931 0 872.8 0C814.7 0 756.3 0 698.2 0C640 0 582 0 523.8 0C465.7 0 407.3 0 349.2 0C291 0 233 0 174.8 0C116.7 0 58.3 0 29.2 0L0 0Z"
+                fill="#011732"
+              ></path>
+              <path
+                d="M0 411L29.2 434.5C58.3 458 116.7 505 174.8 499.7C233 494.3 291 436.7 349.2 422.2C407.3 407.7 465.7 436.3 523.8 450.7C582 465 640 465 698.2 439.8C756.3 414.7 814.7 364.3 872.8 342.8C931 321.3 989 328.7 1047.2 316.2C1105.3 303.7 1163.7 271.3 1221.8 285.7C1280 300 1338 361 1396.2 389.7C1454.3 418.3 1512.7 414.7 1570.8 420.2C1629 425.7 1687 440.3 1745.2 480C1803.3 519.7 1861.7 584.3 1890.8 616.7L1920 649L1920 64L1890.8 78.3C1861.7 92.7 1803.3 121.3 1745.2 121.3C1687 121.3 1629 92.7 1570.8 83.7C1512.7 74.7 1454.3 85.3 1396.2 87.2C1338 89 1280 82 1221.8 76.7C1163.7 71.3 1105.3 67.7 1047.2 74.8C989 82 931 100 872.8 114.3C814.7 128.7 756.3 139.3 698.2 142.8C640 146.3 582 142.7 523.8 139.2C465.7 135.7 407.3 132.3 349.2 137.8C291 143.3 233 157.7 174.8 157.7C116.7 157.7 58.3 143.3 29.2 136.2L0 129Z"
+                fill="#00193b"
+              ></path>
+              <path
+                d="M0 725L29.2 721.3C58.3 717.7 116.7 710.3 174.8 701.3C233 692.3 291 681.7 349.2 697.8C407.3 714 465.7 757 523.8 767.7C582 778.3 640 756.7 698.2 754.8C756.3 753 814.7 771 872.8 781.8C931 792.7 989 796.3 1047.2 773C1105.3 749.7 1163.7 699.3 1221.8 681.3C1280 663.3 1338 677.7 1396.2 677.7C1454.3 677.7 1512.7 663.3 1570.8 685C1629 706.7 1687 764.3 1745.2 798.5C1803.3 832.7 1861.7 843.3 1890.8 848.7L1920 854L1920 647L1890.8 614.7C1861.7 582.3 1803.3 517.7 1745.2 478C1687 438.3 1629 423.7 1570.8 418.2C1512.7 412.7 1454.3 416.3 1396.2 387.7C1338 359 1280 298 1221.8 283.7C1163.7 269.3 1105.3 301.7 1047.2 314.2C989 326.7 931 319.3 872.8 340.8C814.7 362.3 756.3 412.7 698.2 437.8C640 463 582 463 523.8 448.7C465.7 434.3 407.3 405.7 349.2 420.2C291 434.7 233 492.3 174.8 497.7C116.7 503 58.3 456 29.2 432.5L0 409Z"
+                fill="#001b43"
+              ></path>
+              <path
+                d="M0 865L29.2 875.8C58.3 886.7 116.7 908.3 174.8 915.5C233 922.7 291 915.3 349.2 918.8C407.3 922.3 465.7 936.7 523.8 943.8C582 951 640 951 698.2 958.3C756.3 965.7 814.7 980.3 872.8 984C931 987.7 989 980.3 1047.2 964C1105.3 947.7 1163.7 922.3 1221.8 926C1280 929.7 1338 962.3 1396.2 960.7C1454.3 959 1512.7 923 1570.8 915.7C1629 908.3 1687 929.7 1745.2 942.2C1803.3 954.7 1861.7 958.3 1890.8 960.2L1920 962L1920 852L1890.8 846.7C1861.7 841.3 1803.3 830.7 1745.2 796.5C1687 762.3 1629 704.7 1570.8 683C1512.7 661.3 1454.3 675.7 1396.2 675.7C1338 675.7 1280 661.3 1221.8 679.3C1163.7 697.3 1105.3 747.7 1047.2 771C989 794.3 931 790.7 872.8 779.8C814.7 769 756.3 751 698.2 752.8C640 754.7 582 776.3 523.8 765.7C465.7 755 407.3 712 349.2 695.8C291 679.7 233 690.3 174.8 699.3C116.7 708.3 58.3 715.7 29.2 719.3L0 723Z"
+                fill="#032a5f"
+              ></path>
+              <path
+                d="M0 1081L29.2 1081C58.3 1081 116.7 1081 174.8 1081C233 1081 291 1081 349.2 1081C407.3 1081 465.7 1081 523.8 1081C582 1081 640 1081 698.2 1081C756.3 1081 814.7 1081 872.8 1081C931 1081 989 1081 1047.2 1081C1105.3 1081 1163.7 1081 1221.8 1081C1280 1081 1338 1081 1396.2 1081C1454.3 1081 1512.7 1081 1570.8 1081C1629 1081 1687 1081 1745.2 1081C1803.3 1081 1861.7 1081 1890.8 1081L1920 1081L1920 960L1890.8 958.2C1861.7 956.3 1803.3 952.7 1745.2 940.2C1687 927.7 1629 906.3 1570.8 913.7C1512.7 921 1454.3 957 1396.2 958.7C1338 960.3 1280 927.7 1221.8 924C1163.7 920.3 1105.3 945.7 1047.2 962C989 978.3 931 985.7 872.8 982C814.7 978.3 756.3 963.7 698.2 956.3C640 949 582 949 523.8 941.8C465.7 934.7 407.3 920.3 349.2 916.8C291 913.3 233 920.7 174.8 913.5C116.7 906.3 58.3 884.7 29.2 873.8L0 863Z"
+                fill="#0a3a7d"
+              ></path>
+            </svg>
           </div>
         </ParallaxLayer>
       </Parallax>
