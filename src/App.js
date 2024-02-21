@@ -5,11 +5,9 @@ import "./App.css";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import Footer from "./components/footer";
+import Header from "./components/header";
 
-// import Galaxy from "./assets/photos/";
-// import Earth from "./assets/photos/";
-import Waves from "./assets/svgs/layered-waves-haikei.svg";
+import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.png";
 
 import Portfolio from "./pages/portfolio";
 
@@ -18,12 +16,21 @@ function App() {
 
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-t from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
+      <Header />
+
       <Parallax pages={4}>
         <ParallaxLayer offset={0} speed={1.5}>
-          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
-            {/* <img src={Galaxy} alt="Vector cartoon space background"></img> */}
+          <div className="">
+            <img src={Saturn} alt="Saturn Cartoon"></img>
           </div>
         </ParallaxLayer>
+
+        <ParallaxLayer offset={0.4} speed={0.5}>
+          <div className="text-5xl text-white">
+            <code>console.log("Hello! My Name is Sean")</code>
+          </div>
+        </ParallaxLayer>
+
         <ParallaxLayer offset={0.9} speed={1}>
           <div className="bg-black bg-gradient-to-t from-current to-gray-700">
             {/* <img
@@ -44,11 +51,7 @@ function App() {
             <code>Hi, My Name is Sean Haboon</code>
           </div>
         </ParallaxLayer>
-
-        <ParallaxLayer offset={3} speed={0.5}></ParallaxLayer>
       </Parallax>
-
-      <Footer />
 
       <Router>
         <Routes>
