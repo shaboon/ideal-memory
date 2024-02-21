@@ -8,6 +8,8 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Header from "./components/header";
 
 import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.png";
+import Scene from "./assets/photos/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.0385456317079840928032.png";
+import Follower from "./assets/photos/5Mz4.gif";
 
 import Portfolio from "./pages/portfolio";
 
@@ -42,15 +44,23 @@ function App() {
 
         <ParallaxLayer offset={1.05} speed={1.2}>
           <div className="w-screen">
-            {/* <img src={Waves} alt="Vector cartoon waves background"></img> */}
+            <img src={Scene} alt="Cartoon Waterfall and scene img"></img>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.75} speed={2}>
+        <ParallaxLayer offset={2} speed={2}>
           <div className="">
             <code>Hi, My Name is Sean Haboon</code>
           </div>
         </ParallaxLayer>
+
+        {/* Layer does not follow for the entire page, please refer to ref video for possible solution */}
+        {/* Layer is also too high up on priority, taking up space for relevant information */}
+        {/* <ParallaxLayer offset={0} factor={2} speed={2}>
+          <div className="">
+            <img src={Follower} alt="Fire gif"></img>
+          </div>
+        </ParallaxLayer> */}
       </Parallax>
 
       <Router>
