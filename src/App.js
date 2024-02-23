@@ -11,6 +11,7 @@ import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-
 import Scene from "./assets/photos/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.0385456317079840928032.png";
 import Follower from "./assets/photos/5Mz4.gif";
 
+import Typewriter from "./components/typewriter";
 import Portfolio from "./pages/portfolio";
 
 function App() {
@@ -28,17 +29,25 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.4} speed={0.5}>
-          <div className="text-5xl text-white">
-            <code>console.log("Hello! My Name is Sean")</code>
+          <div className="p-5 text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white">
+            <code>
+              <Typewriter text="coonsole.log(Hello, My Name is Sean)" />
+            </code>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.9} speed={1}>
-          <div className="bg-black bg-gradient-to-t from-current to-gray-700">
+          <div className="bg-black bg-gradient-to-l from-current to-gray-700">
             {/* <img
               src={Earth}
               alt="Vector cartoon space to earth background"
             ></img> */}
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1.0} speed={0.5}>
+          <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
+            <p>My Projects are cool</p>
           </div>
         </ParallaxLayer>
 
@@ -49,8 +58,8 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={2}>
-          <div className="">
-            <code>Hi, My Name is Sean Haboon</code>
+          <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white">
+            <p className="text-2xl">Contact Me</p>
           </div>
         </ParallaxLayer>
 
@@ -58,7 +67,7 @@ function App() {
         {/* Layer is also too high up on priority, taking up space for relevant information */}
         {/* <ParallaxLayer offset={0} factor={2} speed={2}>
           <div className="">
-            <img src={Follower} alt="Fire gif"></img>
+          <img src={Follower} alt="Fire gif"></img>
           </div>
         </ParallaxLayer> */}
       </Parallax>
