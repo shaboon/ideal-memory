@@ -6,8 +6,10 @@ import "./App.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Header from "./components/header";
+import Modal from "./components/modal";
 
 import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.png";
+import Earth from "./assets/photos/earth-png-25631.png";
 import Scene from "./assets/photos/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.0385456317079840928032.png";
 import Follower from "./assets/photos/5Mz4.gif";
 
@@ -31,27 +33,28 @@ function App() {
         <ParallaxLayer offset={0.4} speed={0.5}>
           <div className="p-5 text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white">
             <code>
-              <Typewriter text="coonsole.log(Hello, My Name is Sean)" />
+              <Typewriter text="console.log(Hello, My Name is Sean Haboon)" />
             </code>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.9} speed={1}>
-          <div className="bg-black bg-gradient-to-l from-current to-gray-700">
-            {/* <img
+        <ParallaxLayer offset={1} speed={1}>
+          <div className="">
+            <img
               src={Earth}
               alt="Vector cartoon space to earth background"
-            ></img> */}
+            ></img>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.0} speed={0.5}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
             <p>My Projects are cool</p>
+            <Modal />
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.05} speed={1.2}>
+        <ParallaxLayer offset={2} speed={1.2}>
           <div className="w-screen">
             <img src={Scene} alt="Cartoon Waterfall and scene img"></img>
           </div>
@@ -60,6 +63,7 @@ function App() {
         <ParallaxLayer offset={2} speed={2}>
           <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white">
             <p className="text-2xl">Contact Me</p>
+            <Typewriter text="Email: shaboon.dev@gmail.com" />
           </div>
         </ParallaxLayer>
 

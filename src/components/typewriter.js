@@ -2,22 +2,20 @@ import { useState, useEffect } from "react";
 
 const useTypewriter = (text, speed = 100) => {
   const [displayText, setDisplayText] = useState("");
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let i = 0;
-    const typingInterval = setInterval(() => {
-      if (i < text.length) {
-        setDisplayText((prevText) => prevText + text.charAt(i));
-        i++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, speed);
+    let interval;
 
-    return () => {
-      clearInterval(typingInterval);
-    };
-  }, [text, speed]);
+    if (index < text.length) {
+      interval = setInterval(() => {
+        setDisplayText((prevText) => prevText + text[index]);
+        setIndex((prevIndex) => prevIndex + 1);
+      }, speed);
+    }
+
+    return () => clearInterval(interval);
+  }, [text, speed, index]);
 
   return displayText;
 };
