@@ -6,6 +6,7 @@ import "./App.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Header from "./components/header";
+import Carousel from "./components/Carousel";
 import Modal from "./components/modal";
 
 import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.png";
@@ -50,7 +51,7 @@ function App() {
         <ParallaxLayer offset={1.0} speed={0.5}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
             <p>My Projects are cool</p>
-            <Modal />
+            <Carousel />
           </div>
         </ParallaxLayer>
 

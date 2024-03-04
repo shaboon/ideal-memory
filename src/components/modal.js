@@ -1,30 +1,44 @@
-import { React } from "react";
+import React, { useState } from "react";
 import "./modal.css";
 
-function Modal() {
+export default function Modal() {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
+
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <button className="close-button">&times;</button>
-        <section class="slider-wrapper">
-          <button class="slide-arrow" id="slide-arrow-prev">
-            &#8249;
-          </button>
+    <>
+      <button onClick={toggleModal} className="btn-modal">
+        Wow Text
+      </button>
 
-          <button class="slide-arrow" id="slide-arrow-next">
-            &#8250;
-          </button>
-
-          <ul class="slides-container" id="slides-container">
-            <li class="slide"></li>
-            <li class="slide"></li>
-            <li class="slide"></li>
-            <li class="slide"></li>
-          </ul>
-        </section>
-      </div>
-    </div>
+      {modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
+            <h2>Hello Modal</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              perferendis suscipit officia recusandae, eveniet quaerat assumenda
+              id fugit, dignissimos maxime non natus placeat illo iusto!
+              Sapiente dolorum id maiores dolores? Illum pariatur possimus
+              quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
+              placeat tempora vitae enim incidunt porro fuga ea.
+            </p>
+            <button className="close-modal" onClick={toggleModal}>
+              CLOSE
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
-
-export default Modal;
