@@ -1,8 +1,8 @@
 import "./Carousel.css";
 
 import cmsProject from "../assets/photos/project-images/cmsrunning.png";
-import passGen from "../assets/photos/project-images/cmsrunning.png";
-import finisNoct from "../assets/photos/project-images/cmsrunning.png";
+import passGen from "../assets/photos/project-images/password-gen.png";
+import finisNoct from "../assets/photos/project-images/finis.png";
 import marvelDatabase from "../assets/photos/project-images/marvel.png";
 import intstellarIndex from "../assets/photos/project-images/interstellar-index.herokuapp.com_.png";
 
@@ -14,6 +14,9 @@ export default function Carousel() {
         <section class="slider-wrapper">
           <button class="slide-arrow" id="slide-arrow-prev">
             &#8249;
+          </button>
+          <button class="slide-arrow" id="slide-arrow-next">
+            &#8250;
           </button>
 
           <ul class="slides-container" id="slides-container">
@@ -33,10 +36,6 @@ export default function Carousel() {
               <img src={intstellarIndex} />
             </li>
           </ul>
-
-          <button class="slide-arrow" id="slide-arrow-next">
-            &#8250;
-          </button>
         </section>
       </div>
     </div>
