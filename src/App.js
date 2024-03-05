@@ -7,6 +7,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Header from "./components/header";
 import Carousel from "./components/Carousel";
+import Modal, { toggleModal } from "./components/Modal.tsx";
 
 import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.png";
 import Earth from "./assets/photos/earth-png-25631.png";
@@ -35,6 +36,11 @@ function App() {
             <code>
               <Typewriter text="console.log(Hello, My Name is Sean Haboon)" />
             </code>
+            <button onClick={() => toggleModal("test-modal")}>o</button>
+            <Modal label="test-modal">
+              <h1>Test Modal</h1>
+              <button onClick={() => toggleModal("test-modal")}>x</button>
+            </Modal>
           </div>
         </ParallaxLayer>
 
