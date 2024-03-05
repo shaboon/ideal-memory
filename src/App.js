@@ -7,7 +7,6 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Header from "./components/header";
 import Carousel from "./components/Carousel";
-import Modal from "./components/modal";
 
 import Saturn from "./assets/photos/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.png";
 import Earth from "./assets/photos/earth-png-25631.png";
