@@ -1,5 +1,11 @@
 import "./Carousel.css";
 
+import cmsProject from "../assets/photos/project-images/cmsrunning.png";
+import passGen from "../assets/photos/project-images/cmsrunning.png";
+import finisNoct from "../assets/photos/project-images/cmsrunning.png";
+import marvelDatabase from "../assets/photos/project-images/marvel.png";
+import intstellarIndex from "../assets/photos/project-images/interstellar-index.herokuapp.com_.png";
+
 // Create Better Carousel
 export default function Carousel() {
   return (
@@ -11,10 +17,21 @@ export default function Carousel() {
           </button>
 
           <ul class="slides-container" id="slides-container">
-            <li class="slide">S1</li>
-            <li class="slide">S2</li>
-            <li class="slide">S3</li>
-            <li class="slide">S4</li>
+            <li class="slide">
+              <img src={cmsProject} />
+            </li>
+            <li class="slide">
+              <img src={passGen} />
+            </li>
+            <li class="slide">
+              <img src={finisNoct} />
+            </li>
+            <li class="slide">
+              <img src={marvelDatabase} />
+            </li>
+            <li class="slide">
+              <img src={intstellarIndex} />
+            </li>
           </ul>
 
           <button class="slide-arrow" id="slide-arrow-next">
