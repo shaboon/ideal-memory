@@ -79,8 +79,8 @@ function App() {
         <ParallaxLayer offset={1.0} speed={0.5}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
             <p>My Projects are cool</p>
-            <section>
-              <Carousel images={IMAGES} />
+            <section className="carousel-wrapper">
+              <Carousel imageUrls={IMAGES} />
             </section>
           </div>
         </ParallaxLayer>
