@@ -79,7 +79,10 @@ function App() {
         <ParallaxLayer offset={1.0} speed={0.5}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
             <p>My Projects are cool</p>
-            <section className="carousel-wrapper">
+            <section
+              style={{ maxWidth: "1200px", width: "100%", height: "500px" }}
+              className="carousel-wrapper"
+            >
               <Carousel imageUrls={IMAGES} />
             </section>
           </div>
@@ -93,8 +96,21 @@ function App() {
 
         <ParallaxLayer offset={2} speed={2}>
           <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white">
-            <p className="text-2xl">Contact Me</p>
-            <Typewriter text="Email: shaboon.dev@gmail.com" />
+            <button onClick={() => toggleModal("contact-info")}>
+              Contact Me
+            </button>
+            <Modal label="contact-info">
+              <Typewriter text="Email: shaboon.dev@gmail.com" />
+              <a href="https://github.com/shaboon">
+                <button>Github</button>
+              </a>
+              <a href="https://www.linkedin.com/in/sean-haboon-6494501a7/">
+                <button>LinkedIn</button>
+              </a>
+              <button onClick={() => toggleModal("contact-info")}>
+                Get Back to Content
+              </button>
+            </Modal>
           </div>
         </ParallaxLayer>
 

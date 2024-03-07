@@ -4,28 +4,30 @@ import { ArrowBigLeft, ArrowBigRight } from "lucide-react"
 import "./Carousel.css"
 
 type ImageSliderProps = {
-    imageUrls: string[]
+    imageUrls: [string]
 }
 
 export default function Carousel ({ imageUrls }: ImageSliderProps) {
     const [imageIndex, setImageIndex] = useState(0)
 
     function showPrevSlide() {
-        setImageIndex((index) => {
+        setImageIndex(index => {
             if (index === 0) return imageUrls.length - 1
             return index - 1
         })
     }
     function showNextSlide() {
-        setImageIndex((index) => {
+        setImageIndex(index => {
             if (index === imageUrls.length - 1) return 0
             return index + 1
         })
     }
     
     return (
-        <section>
-            <img src={imageUrls[imageIndex]} alt="project-carousel" className="carousel" />
+        <section style={{width: "100%", height: "100%", position: "relative"}}>
+            <div style={{width: "100%", height: "100%", overflow: "hidden"}}>
+                    <img src={imageUrls[imageIndex]} alt="project-carousel" className="carousel-content" />
+                    </div>
             <button className="carousel-bttn left" onClick={showPrevSlide}>
                 <ArrowBigLeft />
             </button>
