@@ -1,39 +1,51 @@
 import React, { useState } from "react"
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react"
+import { ArrowBigLeft, ArrowBigRight, CircleDot, Circle } from "lucide-react"
 
 import "./Carousel.css"
 
 type ImageSliderProps = {
-    imageUrls: [string]
+    images: {
+        url: string
+        alt: string
+    }[]
 }
 
-export default function Carousel ({ imageUrls }: ImageSliderProps) {
+export default function Carousel ({ images }: ImageSliderProps) {
     const [imageIndex, setImageIndex] = useState(0)
 
     function showPrevSlide() {
         setImageIndex(index => {
-            if (index === 0) return imageUrls.length - 1
+            if (index === 0) return images.length - 1
             return index - 1
         })
     }
     function showNextSlide() {
         setImageIndex(index => {
-            if (index === imageUrls.length - 1) return 0
+            if (index === images.length - 1) return 0
             return index + 1
         })
     }
     
     return (
-        <section style={{width: "100%", height: "100%", position: "relative"}}>
-            <div style={{width: "100%", height: "100%", overflow: "hidden"}}>
-                    <img src={imageUrls[imageIndex]} alt="project-carousel" className="carousel-content" />
+        <section className="carousel-wrapper" style={{width: "100%", height: "100%", position: "relative", overflow:"hidden"}}>
+                    <div style={{width: "100%", height: "100%", display: "flex"}}>
+                        {images.map(({ url, alt }) => (
+                            <img key={url} src={url} alt={alt} className="carousel-content" style={{translate: `${-100 * imageIndex}%`}} />
+                        ))}
                     </div>
-            <button className="carousel-bttn left" onClick={showPrevSlide}>
+            <button className="carousel-bttn left" onClick={showPrevSlide} aria-label="Carousel Button Scroll Left">
                 <ArrowBigLeft />
             </button>
-            <button className="carousel-bttn right" onClick={showNextSlide}>
+            <button className="carousel-bttn right" onClick={showNextSlide} aria-label="Carousel Button Scroll Right">
                 <ArrowBigRight />
             </button>
+            <div style={{position: "absolute", bottom: ".5rem", left: "50%", translate: "-50%"}}>
+                {images.map((_, index) => (
+                    <button className="index-bttns" key={index} onClick = {()=> setImageIndex(index)} aria-label={`View Image ${index}`}>
+                        {index === imageIndex ? <CircleDot /> : <Circle />}
+                    </button>
+                ))}
+            </div>
         </section>
     )
 }

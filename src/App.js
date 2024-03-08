@@ -32,12 +32,12 @@ import intStell from "./assets/photos/project-images/interstellar-index.herokuap
 
 // Code for Carousel
 const IMAGES = [
-  cmsProject,
-  passGen,
-  workDay,
-  finisNoctis,
-  marvelData,
-  intStell,
+  { url: cmsProject, alt: "CMS Project" },
+  { url: passGen, alt: "Randomized Password Generator" },
+  { url: workDay, alt: "Work/Task Planner" },
+  { url: finisNoctis, alt: "Mock Vacation - Reservation Site" },
+  { url: marvelData, alt: "Marvel Database" },
+  { url: intStell, alt: "Starwars Database" },
 ];
 
 function App() {
@@ -78,12 +78,12 @@ function App() {
 
         <ParallaxLayer offset={1.0} speed={0.5}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
-            <p>My Projects are cool</p>
+            <p className="p-2 m-5">My Projects are cool</p>
             <section
               style={{ maxWidth: "1200px", width: "100%", height: "500px" }}
-              className="carousel-wrapper"
+              className=""
             >
-              <Carousel imageUrls={IMAGES} />
+              <Carousel images={IMAGES} />
             </section>
           </div>
         </ParallaxLayer>

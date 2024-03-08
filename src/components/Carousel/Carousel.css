@@ -1,6 +1,82 @@
+.carousel-wrapper {
+
+}
+
 .carousel-content {
     object-fit: cover;
     width: 100%;
     height: 100%;
     display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out;
+}
+
+.carousel-bttn {
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.carousel-bttn:hover, .carousel-bttn:focus-visible {
+    background-color: rgb(209, 100, 3, 0.3);
+}
+
+.carousel-bttn:hover, .carousel-bttn:focus-visible > * {
+    animation: squish 200ms ease-in-out;
+}
+
+.carousel-bttn > * {
+    stroke: white;
+    fill: black;
+    width: 2rem;
+    height: 2rem;
+}
+
+@keyframes squish {
+    50% {
+        scale: 1.4 0.6;
+    }
+}
+
+.index-bttns {
+    all: unset;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    /* display: block; */
+    /* cursor: pointer; */
+    /* width: 1rem; */
+    /* height: 1rem; */
+    transition: scale 100ms ease-in-out;
+}
+
+.index-bttns:hover, .index-bttns:focus-visible {
+    scale: 1.2;
+}
+
+.index-bttns > * {
+    stroke: #ff8840;
+}
+
+@keyframes scale {
+    50% {
+        scale: 1.2;
+    }
+}
+
+.carousel-bttn:focus-visible, .index-bttns:focus-visible {
+    outline: auto;
 }
