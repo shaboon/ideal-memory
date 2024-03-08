@@ -42,7 +42,7 @@ export default function Carousel ({ images }: ImageSliderProps) {
             <div style={{position: "absolute", bottom: ".5rem", left: "50%", translate: "-50%"}}>
                 {images.map((_, index) => (
                     <button className="index-bttns" key={index} onClick = {()=> setImageIndex(index)} aria-label={`View Image ${index}`}>
-                        {index === imageIndex ? <CircleDot /> : <Circle />}
+                        {index === imageIndex ? <CircleDot aria-hidden/> : <Circle />}
                     </button>
                 ))}
             </div>
