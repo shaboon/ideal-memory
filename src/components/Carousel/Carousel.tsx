@@ -7,6 +7,9 @@ type ImageSliderProps = {
     images: {
         url: string
         alt: string
+        title: string
+        desc: string
+        link: string
     }[]
 }
 
@@ -28,11 +31,15 @@ export default function Carousel ({ images }: ImageSliderProps) {
     
     return (
         <section className="carousel-wrapper" style={{width: "100%", height: "100%", position: "relative", overflow:"hidden"}}>
-                    <div style={{width: "100%", height: "100%", display: "flex"}}>
+                    <a href={images[imageIndex].link} target="_blank" style={{width: "100%", height: "100%", display: "flex"}}>
                         {images.map(({ url, alt }) => (
                             <img key={url} src={url} alt={alt} className="carousel-content" style={{translate: `${-100 * imageIndex}%`}} />
                         ))}
-                    </div>
+                        <article className="content-info">
+                            {images[imageIndex].title && <h2>{images[imageIndex].title}</h2>}
+                            {images[imageIndex].desc && <p>{images[imageIndex].desc}</p>}
+                        </article>
+                    </a>
             <button className="carousel-bttn left" onClick={showPrevSlide} aria-label="Carousel Button Scroll Left">
                 <ArrowBigLeft />
             </button>

@@ -32,12 +32,48 @@ import intStell from "./assets/photos/project-images/interstellar-index.herokuap
 
 // Code for Carousel
 const IMAGES = [
-  { url: cmsProject, alt: "CMS Project" },
-  { url: passGen, alt: "Randomized Password Generator" },
-  { url: workDay, alt: "Work/Task Planner" },
-  { url: finisNoctis, alt: "Mock Vacation - Reservation Site" },
-  { url: marvelData, alt: "Marvel Database" },
-  { url: intStell, alt: "Starwars Database" },
+  {
+    url: cmsProject,
+    alt: "CMS Project",
+    title: "CMS Project",
+    desc: "This project was created with the intent to make a database with referential data-types. (Please note that this application runs locally)",
+    link: "https://github.com/shaboon/silver-palm-tree",
+  },
+  {
+    url: passGen,
+    alt: "Randomized Password Generator",
+    title: "Randomized Password Generator",
+    desc: "With the application of regex, this application users can recieve a randomly generated password that follows their input.",
+    link: "https://shaboon.github.io/expert-adventure-builtido/",
+  },
+  {
+    url: workDay,
+    alt: "Work/Task Planner",
+    title: "Work Day Planner",
+    desc: "The Work Day Planner application, can be used to track whatever tasks a user may want to complete timed with the hour of the day.",
+    link: "https://shaboon.github.io/potential-guacamole/",
+  },
+  {
+    url: finisNoctis,
+    alt: "Mock Vacation - Reservation Site",
+    title: "Project 1: Isle Finic Notis",
+    desc: "As a starting project, this application was made as a team utilizing HTML5, CSS3, Bootstrap and JavaScript.",
+    link: "https://shaboon.github.io/improved-happiness/",
+  },
+  {
+    url: marvelData,
+    alt: "Marvel Database",
+    title: "Marvel Database",
+    desc: "This application was created as my second team based project. Within this application, our own database was created where we made an application that could read and dynamically generate cards as the database grew or changed",
+    link: "https://intense-savannah-08912.herokuapp.com/",
+  },
+  {
+    url: intStell,
+    alt: "Starwars Database",
+    title: "InterStellar Index: A Star Wars Database",
+    desc: "This was my final project, which had the same team as the Marvel Database. Within this project, we created an application that was capable of",
+    link: "https://interstellar-index.herokuapp.com/",
+  },
 ];
 
 function App() {
