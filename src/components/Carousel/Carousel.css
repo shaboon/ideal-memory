@@ -80,3 +80,26 @@
 .carousel-bttn:focus-visible, .index-bttns:focus-visible {
     outline: auto;
 }
+
+/* Project Info */
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    transition: background-color 300ms ease-in-out;
+}
+
+.content-info h2 {
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.content-info p {
+    font-size: 0.5rem;
+}

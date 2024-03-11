@@ -30,7 +30,7 @@ import finisNoctis from "./assets/photos/project-images/finis.png";
 import marvelData from "./assets/photos/project-images/marvel.png";
 import intStell from "./assets/photos/project-images/interstellar-index.herokuapp.com_.png";
 
-// Code for Carousel
+// Object for Carousel
 const IMAGES = [
   {
     url: cmsProject,
@@ -114,7 +114,6 @@ function App() {
 
         <ParallaxLayer offset={1.0} speed={0.5}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
-            <p className="p-2 m-5">My Projects are cool</p>
             <section
               style={{ maxWidth: "1200px", width: "100%", height: "500px" }}
               className=""
