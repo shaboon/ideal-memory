@@ -12,7 +12,7 @@ export default function Header() {
   // });
 
   return (
-    <header className="header w-screen absolute bottom-0 left-0 bg-black bg-gradient-to-t from-current to-gray-700">
+    <header className="header w-screen absolute bottom-0 left-0 bg-gradient-to-t from-gray-700 to-transparent z-50">
       <ul>
         <li className="github">
           <a className="" href="">
