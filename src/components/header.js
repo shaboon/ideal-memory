@@ -1,3 +1,6 @@
+import github from "../assets/link-logos/github.png";
+import linkedIn from "../assets/link-logos/linkedin.png";
+
 export default function Header() {
   // Scroll Percentage/Progress Bar Math - Could Be Used with Modal to ask to contact me perhaps?
   // $(window).on("scroll", function () {
@@ -15,30 +18,34 @@ export default function Header() {
     <header className="header w-screen absolute bottom-0 left-0 bg-gradient-to-t from-gray-700 to-transparent z-50">
       <ul>
         <li className="github">
-          <a className="" href="">
+          <a className="nav" href="https://github.com/shaboon" target="_blank">
             <button>
-              <img></img>
+              <img src={github}></img>
             </button>
           </a>
         </li>
         <li className="resume">
-          <a className="" href="/resume">
+          <a className="nav" href="/resume">
             <button>
               <img></img>
             </button>
           </a>
         </li>
         <li className="home">
-          <a className="" href="/">
+          <a className="nav" href="/">
             <button>
               <img></img>
             </button>
           </a>
         </li>
         <li className="linkedIn">
-          <a className="">
+          <a
+            className="nav"
+            href="https://www.linkedin.com/in/sean-haboon-6494501a7/"
+            target="_blank"
+          >
             <button>
-              <img></img>
+              <img src={linkedIn}></img>
             </button>
           </a>
         </li>
