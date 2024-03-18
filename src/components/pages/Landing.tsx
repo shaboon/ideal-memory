@@ -130,21 +130,12 @@ function App() {
 
         <ParallaxLayer offset={2} speed={2}>
           <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white">
-            <button onClick={() => toggleModal("contact-info")}>
+            <p onClick={() => toggleModal("contact-info")}>
               Contact Me
-            </button>
-            <Modal label="contact-info">
-              <Typewriter text="Email: shaboon.dev@gmail.com" speed="50" />
-              <a href="https://github.com/shaboon">
-                <button>Github</button>
-              </a>
-              <a href="https://www.linkedin.com/in/sean-haboon-6494501a7/">
-                <button>LinkedIn</button>
-              </a>
-              <button onClick={() => toggleModal("contact-info")}>
-                Get Back to Content
-              </button>
-            </Modal>
+            </p>
+            <section>
+              <div>Email: shaboon.dev@gmail.com</div>
+            </section>
           </div>
         </ParallaxLayer>
 
