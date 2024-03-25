@@ -78,6 +78,8 @@ function App() {
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
 
+      <Header />
+
       <Parallax pages={4}>
         <ParallaxLayer offset={0} speed={1.5}>
           <div className="">
@@ -108,7 +110,7 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.0} speed={0.5}>
-          <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-white">
+          <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white">
             <section
               style={{
                 maxWidth: "1200px",
