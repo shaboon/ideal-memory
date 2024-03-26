@@ -109,7 +109,7 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.0} speed={0.5}>
+        <ParallaxLayer offset={1.0} speed={0.2}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white">
             <section
               style={{
