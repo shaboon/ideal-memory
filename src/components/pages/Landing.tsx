@@ -82,8 +82,8 @@ function App() {
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
 
-      <Parallax pages={5} ref={ref}>
-        <ParallaxLayer offset={0} speed={1.5} horizontal>
+      <Parallax pages={3.2} ref={ref}>
+        <ParallaxLayer offset={0} speed={1.5}>
           <div className="">
             <img src={Saturn} alt="Saturn Cartoon"></img>
           </div>
@@ -102,7 +102,7 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={1}>
+        <ParallaxLayer offset={1} speed={1.2}>
           <div className="">
             <img
               src={Earth}
@@ -111,7 +111,7 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.0} speed={0.2}>
+        <ParallaxLayer offset={1} speed={0.2}>
           <div className="p-5 text-right text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white">
             <section
               style={{
@@ -126,13 +126,13 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4} speed={1.2}>
+        <ParallaxLayer offset={2} speed={1.2}>
           <div className="w-screen z-0">
             <img src={Scene} alt="Cartoon Waterfall and scene img" className="z-0"></img>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.4} speed={0.5}>
+        <ParallaxLayer offset={2.4} speed={0.5}>
           <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white z-1">
             <p onClick={() => toggleModal("contact-info")}>
               Contact Me
@@ -140,11 +140,8 @@ function App() {
             <section>
               <div>Email: shaboon.dev@gmail.com</div>
             </section>
+              <div onClick={() => {ref.current.scrollTo(0)}}>Look Over My Stuff Again?</div>
           </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={4.5} speed={0.5}>
-           <button className="bg-white" onClick={() => ref.current.scrollTo(0)}>Scroll to top</button>
         </ParallaxLayer>
 
         {/* Layer does not follow for the entire page, please refer to ref video for possible solution */}
