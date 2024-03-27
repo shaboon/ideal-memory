@@ -82,11 +82,11 @@ function App() {
 
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
-      {/* <Header /> */}
+      <Header />
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/Resume" element={<Resume />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
 

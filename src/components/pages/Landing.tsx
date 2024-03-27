@@ -1,6 +1,6 @@
 // Native React App Imports
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 // import "./App.css";
 
 // Package Imports
@@ -25,6 +25,7 @@ import workDay from "../../assets/photos/project-images/workday.png";
 import finisNoctis from "../../assets/photos/project-images/finis.png";
 import marvelData from "../../assets/photos/project-images/marvel.png";
 import intStell from "../../assets/photos/project-images/interstellar-index.herokuapp.com_.png";
+
 
 // Object for Carousel
 const IMAGES = [
@@ -75,28 +76,29 @@ const IMAGES = [
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
 
+  // Ref for Parallax
+  const ref = useRef();
+  
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
 
-      <Header />
-
-      <Parallax pages={4}>
-        <ParallaxLayer offset={0} speed={1.5}>
+      <Parallax pages={5} ref={ref}>
+        <ParallaxLayer offset={0} speed={1.5} horizontal>
           <div className="">
             <img src={Saturn} alt="Saturn Cartoon"></img>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.4} speed={0.5}>
-          <div className="p-5 text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white">
+          <div className="p-5 text-5xl text-base-4 bg-gradient-to-r from-gray-950 to-transparent text-white" onClick={() => {ref.current.scrollTo(1)}}>
             <code>
               <Typewriter text="console.log(Hello, My Name is Sean Haboon)" speed="50" />
             </code>
-            <button onClick={() => toggleModal("test-modal")}>o</button>
+            {/* <button onClick={() => toggleModal("test-modal")}>o</button>
             <Modal label="test-modal">
               <h1>Test Modal</h1>
               <button onClick={() => toggleModal("test-modal")}>x</button>
-            </Modal>
+            </Modal> */}
           </div>
         </ParallaxLayer>
 
@@ -124,14 +126,14 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={1.2}>
-          <div className="w-screen">
-            <img src={Scene} alt="Cartoon Waterfall and scene img"></img>
+        <ParallaxLayer offset={4} speed={1.2}>
+          <div className="w-screen z-0">
+            <img src={Scene} alt="Cartoon Waterfall and scene img" className="z-0"></img>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={2}>
-          <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white">
+        <ParallaxLayer offset={4.4} speed={0.5}>
+          <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white z-1">
             <p onClick={() => toggleModal("contact-info")}>
               Contact Me
             </p>
@@ -139,6 +141,10 @@ function App() {
               <div>Email: shaboon.dev@gmail.com</div>
             </section>
           </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4.5} speed={0.5}>
+           <button className="bg-white" onClick={() => ref.current.scrollTo(0)}>Scroll to top</button>
         </ParallaxLayer>
 
         {/* Layer does not follow for the entire page, please refer to ref video for possible solution */}
