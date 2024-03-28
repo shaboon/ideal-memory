@@ -27,7 +27,7 @@ export default function Resume () {
                 <ParallaxLayer offset={0} speed={1.5}>
                     <section>
                         <h2>Projects - Expanded</h2>
-                        <Parallax pages={6}>
+                        <Parallax pages={3}>
                             <ul>
                             <ParallaxLayer offset={0} speed={1.5}>
                                 <li>
