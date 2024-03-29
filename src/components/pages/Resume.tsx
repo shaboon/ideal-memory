@@ -4,32 +4,24 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 export default function Resume () {
     return (
-        <div>
-            <Parallax pages={3}>
+        <div className="text-white">
+            <Parallax pages={1.2}>
                 <ParallaxLayer offset={0} speed={1.5}>
-                    <section>
+                    <section className="bg-black">
                         <h2 className="">Experiences</h2>
                         <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
                     </section>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={1.5}>
-                    <section>
+                <ParallaxLayer offset={0.2} speed={1.5}>
+                    <section className="bg-black">
                         <h2 className="">Skills</h2>
                         <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
                     </section>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={1.5}>
-                    <section>
-                        <h2 className="">Experiences</h2>
-                        <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
-                    </section>
-                </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={1.5}>
-                    <section>
+                <ParallaxLayer offset={0.4} speed={1.5}>
+                    <section className="bg-black">
                         <h2 className="">Projects - Expanded</h2>
-                        <Parallax pages={3}>
-                            <ul className="projectList">
-                            <ParallaxLayer offset={0} speed={1.5}>
+                            <ul className="projectList bg-black m-2">
                                 <li>
                                     <h3 className="">SQL Based CMS Application</h3>
                                     <p className="">This project was created with the intent of testing SQL functionality, however, it can also be applied and utilized in a commerical setting as well. For this application, I focused on creating relational data and create calling functions that displayed the desired information.</p>
@@ -54,9 +46,7 @@ export default function Resume () {
                                     <h3 className="">Interstellar Index</h3>
                                     <p className="">Applying React.JS, this application uses multiple pages to display information, from our own database, about Star Wars. The intention as a team was to find a way to make an application that makes following a single character's story much easier.</p>
                                 </li>
-                            </ParallaxLayer>
                             </ul>
-                        </Parallax>
                     </section>
                 </ParallaxLayer>
             </Parallax>
