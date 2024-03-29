@@ -8,51 +8,51 @@ export default function Resume () {
             <Parallax pages={3}>
                 <ParallaxLayer offset={0} speed={1.5}>
                     <section>
-                        <h2>Experiences</h2>
+                        <h2 className="">Experiences</h2>
                         <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
                     </section>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={1.5}>
                     <section>
-                        <h2>Skills</h2>
+                        <h2 className="">Skills</h2>
                         <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
                     </section>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={1.5}>
                     <section>
-                        <h2>Experiences</h2>
+                        <h2 className="">Experiences</h2>
                         <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
                     </section>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={1.5}>
                     <section>
-                        <h2>Projects - Expanded</h2>
-                        <Parallax pages={6}>
-                            <ul>
+                        <h2 className="">Projects - Expanded</h2>
+                        <Parallax pages={3}>
+                            <ul className="projectList">
                             <ParallaxLayer offset={0} speed={1.5}>
                                 <li>
-                                    <h3>SQL Based CMS Application</h3>
-                                    <p>This project was created with the intent of testing SQL functionality, however, it can also be applied and utilized in a commerical setting as well. For this application, I focused on creating relational data and create calling functions that displayed the desired information.</p>
+                                    <h3 className="">SQL Based CMS Application</h3>
+                                    <p className="">This project was created with the intent of testing SQL functionality, however, it can also be applied and utilized in a commerical setting as well. For this application, I focused on creating relational data and create calling functions that displayed the desired information.</p>
                                 </li>
                                 <li>
-                                    <h3>Project 2</h3>
-                                    <p>Project 2 description</p>
+                                    <h3 className="">Password Generator</h3>
+                                    <p className="">This Project mainly focused on using regex to randomly generate secure passwords.</p>
                                 </li>
                                 <li>
-                                    <h3>Project 3</h3>
-                                    <p>Project 3 description</p>
+                                    <h3 className="">Work Day Task Tracker</h3>
+                                    <p className="">By utilizing native unix time functions, I was able to create an application that tracks the user's current time and save what tasks they desire to achieve locally on their computer.</p>
                                 </li>
                                 <li>
-                                    <h3>Project 4</h3>
-                                    <p>Project 4 description</p>
+                                    <h3 className="">Isle Finis Notics</h3>
+                                    <p className="">This application was made in both parody and as an exercise for teamwork. Within the project, both Bootstrap and custom CSS was applied in creating a HTML5 based application. Javscript was used to capture user-inputted data and stored locally.</p>
                                 </li>
                                 <li>
-                                    <h3>Project 5</h3>
-                                    <p>Project 5 description</p>
+                                    <h3 className="">Marvel Database</h3>
+                                    <p className="">With handlebars.js and Bootstrap, this application pulls data from our own database and displays information.</p>
                                 </li>
                                 <li>
-                                    <h3>Project 6</h3>
-                                    <p>Project 6 description</p>
+                                    <h3 className="">Interstellar Index</h3>
+                                    <p className="">Applying React.JS, this application uses multiple pages to display information, from our own database, about Star Wars. The intention as a team was to find a way to make an application that makes following a single character's story much easier.</p>
                                 </li>
                             </ParallaxLayer>
                             </ul>
