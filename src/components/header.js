@@ -1,3 +1,5 @@
+import resume from "../assets/link-logos/icons8-resume-50.png";
+import home from "../assets/link-logos/icons8-home-90.png";
 import github from "../assets/link-logos/github.png";
 import linkedIn from "../assets/link-logos/linkedin.png";
 
@@ -17,17 +19,17 @@ export default function Header() {
   return (
     <header className="header w-screen absolute bottom-0 left-0 bg-gradient-to-t from-gray-700 to-transparent z-50">
       <ul className="">
-        <li className="inline resume">
-          <a className="nav" href="/resume">
-            <button>
-              <img></img>
-            </button>
-          </a>
-        </li>
         <li className="inline home">
           <a className="nav" href="/">
             <button>
-              <img></img>
+              <img src={home}></img>
+            </button>
+          </a>
+        </li>
+        <li className="inline resume">
+          <a className="nav" href="/resume">
+            <button>
+              <img src={resume}></img>
             </button>
           </a>
         </li>
