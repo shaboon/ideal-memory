@@ -15,7 +15,20 @@ export default function Resume () {
                 <ParallaxLayer offset={0.2} speed={1.5}>
                     <section className="bg-black">
                         <h2 className="">Skills</h2>
-                        <p>My work history lies mainly in industrial manufacturing and quality assurance, however my most recent experience in the bootcamp has broadened my horizons in the tech sphere.</p>
+                        <ul className="skillsList bg-black m-2">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>NoSQL</li>
+                            <li>React.JS</li>
+                            <li>Node.JS</li>
+                            <li>Express.JS</li>
+                            <li>Handlebars.JS</li>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                            <li>Git</li>
+                        </ul>
                     </section>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0.4} speed={1.5}>
