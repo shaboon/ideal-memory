@@ -2,6 +2,14 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
+//Project Image Imports
+import cmsProject from "../../assets/photos/project-images/cmsrunning.png";
+import passGen from "../../assets/photos/project-images/password-gen.png";
+import workDay from "../../assets/photos/project-images/workday.png";
+import finisNoctis from "../../assets/photos/project-images/finis.png";
+import marvelData from "../../assets/photos/project-images/marvel.png";
+import intStell from "../../assets/photos/project-images/interstellar-index.herokuapp.com_.png";
+
 export default function Resume () {
     return (
         <div className="text-white">
@@ -37,26 +45,32 @@ export default function Resume () {
                             <ul className="projectList bg-black m-2">
                                 <li>
                                     <h3 className="">SQL Based CMS Application</h3>
+                                    <img src={cmsProject} alt="CMS Project"/>
                                     <p className="">This project was created with the intent of testing SQL functionality, however, it can also be applied and utilized in a commerical setting as well. For this application, I focused on creating relational data and create calling functions that displayed the desired information.</p>
                                 </li>
                                 <li>
                                     <h3 className="">Password Generator</h3>
+                                    <img src={passGen} alt="Regex Password Generator"/>
                                     <p className="">This Project mainly focused on using regex to randomly generate secure passwords.</p>
                                 </li>
                                 <li>
                                     <h3 className="">Work Day Task Tracker</h3>
+                                    <img src={workDay} alt="Work Day Task Tracker"/>
                                     <p className="">By utilizing native unix time functions, I was able to create an application that tracks the user's current time and save what tasks they desire to achieve locally on their computer.</p>
                                 </li>
                                 <li>
                                     <h3 className="">Isle Finis Notics</h3>
+                                    <img src={finisNoctis} alt="Isle Finis Noctis"/>
                                     <p className="">This application was made in both parody and as an exercise for teamwork. Within the project, both Bootstrap and custom CSS was applied in creating a HTML5 based application. Javscript was used to capture user-inputted data and stored locally.</p>
                                 </li>
                                 <li>
                                     <h3 className="">Marvel Database</h3>
+                                    <img src={marvelData} alt="Marvel Database"/>
                                     <p className="">With handlebars.js and Bootstrap, this application pulls data from our own database and displays information.</p>
                                 </li>
                                 <li>
                                     <h3 className="">Interstellar Index</h3>
+                                    <img src={intStell} alt="InterStellar Index"/>
                                     <p className="">Applying React.JS, this application uses multiple pages to display information, from our own database, about Star Wars. The intention as a team was to find a way to make an application that makes following a single character's story much easier.</p>
                                 </li>
                             </ul>
