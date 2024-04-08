@@ -7,3 +7,8 @@
     height: 50px;
     margin: 0.5rem;
 }
+
+.resume-proj-img {
+    max-width: 500px;
+    max-height: 500px;
+}
