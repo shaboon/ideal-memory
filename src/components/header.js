@@ -20,14 +20,14 @@ export default function Header() {
     <header className="header w-screen absolute bottom-0 left-0 bg-gradient-to-t from-gray-700 to-transparent z-50">
       <ul className="">
         <li className="inline home">
-          <a className="nav" href="/">
+          <a title="Home" className="nav" href="/">
             <button>
               <img src={home}></img>
             </button>
           </a>
         </li>
         <li className="inline resume">
-          <a className="nav" href="/resume">
+          <a title="My Resume" className="nav" href="/resume">
             <button>
               <img src={resume}></img>
             </button>
@@ -35,6 +35,7 @@ export default function Header() {
         </li>
         <li className="inline linkedIn">
           <a
+            title="My LinkedIn"
             className="nav"
             href="https://www.linkedin.com/in/sean-haboon-6494501a7/"
             target="_blank"
@@ -45,7 +46,12 @@ export default function Header() {
           </a>
         </li>
         <li className="inline github">
-          <a className="nav" href="https://github.com/shaboon" target="_blank">
+          <a
+            title="My GitHub"
+            className="nav"
+            href="https://github.com/shaboon"
+            target="_blank"
+          >
             <button>
               <img src={github}></img>
             </button>
