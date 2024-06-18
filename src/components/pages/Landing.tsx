@@ -102,6 +102,19 @@ function App() {
           </div>
         </ParallaxLayer>
 
+        <ParallaxLayer offset={0.8} speed={0.5}>
+          <div className="p-5 text-5xl text-base-4 bg-gradient-to-l from-gray-950 to-transparent text-slate-300 float-right" onClick={() => {ref.current.scrollTo(1)}}>
+            <code>
+              <Typewriter text="Web-Developer: MERN Stack. Bootcamp Alum, Completed NC Apprentice" speed="50" />
+            </code>
+            {/* <button onClick={() => toggleModal("test-modal")}>o</button>
+            <Modal label="test-modal">
+              <h1>Test Modal</h1>
+              <button onClick={() => toggleModal("test-modal")}>x</button>
+            </Modal> */}
+          </div>
+        </ParallaxLayer>
+
         <ParallaxLayer offset={1} speed={1.2}>
           <div className="">
             <img
@@ -138,7 +151,7 @@ function App() {
               Contact Me
             </p>
             <section>
-              <div>Email: shaboon.dev@gmail.com</div>
+              <p>Email: shaboon.dev@gmail.com</p>
             </section>
               <div onClick={() => {ref.current.scrollTo(0)}}>Look Over My Stuff Again?</div>
           </div>
