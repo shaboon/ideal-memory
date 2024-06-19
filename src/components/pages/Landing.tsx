@@ -82,7 +82,7 @@ function App() {
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
 
-      <Parallax pages={3.2} ref={ref}>
+      <Parallax pages={2.5} ref={ref}>
         <ParallaxLayer offset={0} speed={1.5}>
           <div className="">
             <img src={Saturn} alt="Saturn Cartoon"></img>
@@ -116,7 +116,7 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={1.2}>
-          <div className="">
+          <div className="earth-background">
             <img
               src={Earth}
               alt="Vector cartoon space to earth background"
@@ -139,13 +139,13 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={1.2}>
+        <ParallaxLayer offset={1.8} speed={1.2}>
           <div className="w-screen z-0">
             <img src={Scene} alt="Cartoon Waterfall and scene img" className="z-0"></img>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.4} speed={0.5}>
+        <ParallaxLayer offset={2} speed={0.5}>
           <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white z-1">
             <p onClick={() => toggleModal("contact-info")}>
               Contact Me

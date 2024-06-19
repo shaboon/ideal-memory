@@ -8,17 +8,18 @@
     margin: 0.5rem;
 }
 
-.resume-proj-img {
-    max-width: 500px;
-    max-height: 500px;
-}
 
 .nav button {
     will-change: filter; 
-
+    
     transition: 0.2s ease-in-out;
 }
 
 .nav button:hover {
     filter: drop-shadow(0px 0px 4px #fd831f);
+}
+
+.resume-proj-img {
+    max-width: 70%;
+    max-height: 70%;
 }
