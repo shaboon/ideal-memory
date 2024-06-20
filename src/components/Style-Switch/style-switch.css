@@ -63,3 +63,15 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* Day-CSS */
+  .day {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  /* Night-CSS */
+  .night {
+    background-color: #333;
+    color: #f5f5f5;
+  }
