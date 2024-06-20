@@ -1,9 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-import Modal from "../Modal/Modal.tsx";
-
-
+import Modal, { toggleModal } from "../Modal.tsx";
 
 import "./style-switch.css";
 
@@ -16,6 +14,11 @@ export default function StyleSwitch() {
                     <span className="slider round"></span>
                 </label>
             </div>
+            <button onClick={() => toggleModal("test-modal")}>o</button>
+            <Modal label="test-modal">
+              <h1>Test Modal</h1>
+              <button onClick={() => toggleModal("test-modal")}>x</button>
+            </Modal>
         </div>
     );
 }
