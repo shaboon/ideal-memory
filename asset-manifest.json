@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ideal-memory/static/css/main.810411c8.css",
-    "main.js": "/ideal-memory/static/js/main.04041507.js",
-    "static/js/592.1748f12a.chunk.js": "/ideal-memory/static/js/592.1748f12a.chunk.js",
-    "static/media/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.png": "/ideal-memory/static/media/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.c742533a5d9a2ad4583b.png",
-    "static/media/finis.png": "/ideal-memory/static/media/finis.40c6d9d1c1793d1862a9.png",
-    "static/media/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.png": "/ideal-memory/static/media/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.0385456317079840928032.c6669a328654a3496368.png",
-    "static/media/marvel.png": "/ideal-memory/static/media/marvel.f80233280bce11fd40b9.png",
-    "static/media/password-gen.png": "/ideal-memory/static/media/password-gen.4e86dec144fbac1440da.png",
-    "static/media/interstellar-index.herokuapp.com_.png": "/ideal-memory/static/media/interstellar-index.herokuapp.com_.b8d5c177756df58c93a9.png",
-    "static/media/workday.png": "/ideal-memory/static/media/workday.e756b64b6b9539d9d1e5.png",
-    "static/media/earth-png-25631.png": "/ideal-memory/static/media/earth-png-25631.4f80baa46cb4f3a82b9b.png",
-    "static/media/cmsrunning.png": "/ideal-memory/static/media/cmsrunning.bf8a18a7dbec70fa36d0.png",
-    "static/media/github.png": "/ideal-memory/static/media/github.05f6c17b8cd04c28456f.png",
-    "index.html": "/ideal-memory/index.html",
-    "main.810411c8.css.map": "/ideal-memory/static/css/main.810411c8.css.map",
-    "main.04041507.js.map": "/ideal-memory/static/js/main.04041507.js.map",
-    "592.1748f12a.chunk.js.map": "/ideal-memory/static/js/592.1748f12a.chunk.js.map"
+    "main.css": "/static/css/main.810411c8.css",
+    "main.js": "/static/js/main.b6811514.js",
+    "static/js/592.1748f12a.chunk.js": "/static/js/592.1748f12a.chunk.js",
+    "static/media/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.png": "/static/media/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.c742533a5d9a2ad4583b.png",
+    "static/media/finis.png": "/static/media/finis.40c6d9d1c1793d1862a9.png",
+    "static/media/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.png": "/static/media/transparent-waterfall-rocks-waterfall-moonlit-forest-in-black-and-whit65cdc4dcc41494.0385456317079840928032.c6669a328654a3496368.png",
+    "static/media/marvel.png": "/static/media/marvel.f80233280bce11fd40b9.png",
+    "static/media/password-gen.png": "/static/media/password-gen.4e86dec144fbac1440da.png",
+    "static/media/interstellar-index.herokuapp.com_.png": "/static/media/interstellar-index.herokuapp.com_.b8d5c177756df58c93a9.png",
+    "static/media/workday.png": "/static/media/workday.e756b64b6b9539d9d1e5.png",
+    "static/media/earth-png-25631.png": "/static/media/earth-png-25631.4f80baa46cb4f3a82b9b.png",
+    "static/media/cmsrunning.png": "/static/media/cmsrunning.bf8a18a7dbec70fa36d0.png",
+    "static/media/github.png": "/static/media/github.05f6c17b8cd04c28456f.png",
+    "index.html": "/index.html",
+    "main.810411c8.css.map": "/static/css/main.810411c8.css.map",
+    "main.b6811514.js.map": "/static/js/main.b6811514.js.map",
+    "592.1748f12a.chunk.js.map": "/static/js/592.1748f12a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.810411c8.css",
-    "static/js/main.04041507.js"
+    "static/js/main.b6811514.js"
   ]
 }
