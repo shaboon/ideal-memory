@@ -2,7 +2,7 @@
   "name": "ideal-memory",
   "version": "0.1.0",
   "homepage": "https://shaboon.github.io/ideal-memory/",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-spring/parallax": "^9.7.3",
     "@testing-library/jest-dom": "^5.17.0",
