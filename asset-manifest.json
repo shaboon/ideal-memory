@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ideal-memory/static/css/main.810411c8.css",
-    "main.js": "/ideal-memory/static/js/main.04041507.js",
+    "main.js": "/ideal-memory/static/js/main.9359ee20.js",
     "static/js/592.1748f12a.chunk.js": "/ideal-memory/static/js/592.1748f12a.chunk.js",
     "static/media/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.png": "/ideal-memory/static/media/transparent-saturn-representation-of-orange-saturn-with-golden-ring65c9afa0bbe055.4840335117077165127696.c742533a5d9a2ad4583b.png",
     "static/media/finis.png": "/ideal-memory/static/media/finis.40c6d9d1c1793d1862a9.png",
@@ -15,11 +15,11 @@
     "static/media/github.png": "/ideal-memory/static/media/github.05f6c17b8cd04c28456f.png",
     "index.html": "/ideal-memory/index.html",
     "main.810411c8.css.map": "/ideal-memory/static/css/main.810411c8.css.map",
-    "main.04041507.js.map": "/ideal-memory/static/js/main.04041507.js.map",
+    "main.9359ee20.js.map": "/ideal-memory/static/js/main.9359ee20.js.map",
     "592.1748f12a.chunk.js.map": "/ideal-memory/static/js/592.1748f12a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.810411c8.css",
-    "static/js/main.04041507.js"
+    "static/js/main.9359ee20.js"
   ]
 }
