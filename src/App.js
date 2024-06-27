@@ -78,17 +78,29 @@ import Resume from "./components/pages/Resume.tsx";
 // ];
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState("Landing");
+
+  const renderPage = () => {
+    if (currentPage === "Landing") {
+      return <Landing />;
+    } else if (currentPage === "Resume") {
+      return <Resume />;
+    }
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
-      <Header />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <Router>
         <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="#landing" element={<Landing />} />
+          <Route path="#resume" element={<Resume />} />
         </Routes>
       </Router>
+
+      {renderPage()}
 
       {/* <Parallax pages={4}>
         <ParallaxLayer offset={0} speed={1.5}>

@@ -7,7 +7,6 @@ import { useState, useEffect, useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // Component Imports
-import Header from "../header.js";
 import Modal, { toggleModal } from "../Modal.tsx";
 import Typewriter from "../typewriter.js";
 import Carousel from "../Carousel/Carousel.tsx";
@@ -73,8 +72,7 @@ const IMAGES = [
   },
 ];
 
-function App() {
-  const [currentPage, setCurrentPage] = useState(0);
+export default function Landing() {
 
   // Ref for Parallax
   const ref = useRef();
@@ -84,7 +82,7 @@ function App() {
 
       <Parallax pages={2.5} ref={ref}>
         <ParallaxLayer offset={0} speed={1.5}>
-          <div className="">
+          <div className="saturn-container">
             <img src={Saturn} alt="Saturn Cartoon"></img>
           </div>
         </ParallaxLayer>
@@ -168,5 +166,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

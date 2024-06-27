@@ -7,7 +7,7 @@ import home from "../assets/link-logos/icons8-home-90.png";
 import github from "../assets/link-logos/github.png";
 import linkedIn from "../assets/link-logos/linkedin.png";
 
-export default function Header() {
+export default function Header({ currentPage, handlePageChange }) {
   // Scroll Percentage/Progress Bar Math - Could Be Used with Modal to ask to contact me perhaps?
   // $(window).on("scroll", function () {
   //   var s = $(window).scrollTop(),
@@ -25,14 +25,24 @@ export default function Header() {
       <div className="flex">
         <ul className="flex flex-row justify-start">
           <li className="inline home">
-            <a title="Home" className="nav" href="/">
+            <a
+              title="Home"
+              className="nav"
+              href="#landing"
+              onClick={() => handlePageChange("Landing")}
+            >
               <button>
                 <img src={home}></img>
               </button>
             </a>
           </li>
           <li className="inline resume">
-            <a title="My Resume" className="nav" href="/resume">
+            <a
+              title="My Resume"
+              className="nav"
+              href="#resume"
+              onClick={() => handlePageChange("Resume")}
+            >
               <button>
                 <img src={resume}></img>
               </button>
