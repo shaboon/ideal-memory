@@ -16,7 +16,7 @@ export default function Resume () {
             <Parallax pages={2}>
                 <ParallaxLayer offset={0} speed={1.5}>
                     <section className="bg-black">
-                        <h2 className="">Skills</h2>
+                        <h2 className="text-6xl">Skills</h2>
                         <ul className="skillsList bg-black m-2">
                             <li>HTML5</li>
                             <li>CSS3</li>
