@@ -80,7 +80,7 @@ export default function Landing() {
   return (
     <div className="App h-screen w-screen bg-blue-950 bg-gradient-to-b from-current to-indigo-950 grid grid-cols-5 grid-rows-5 gap-4">
 
-      <Parallax pages={2.5} ref={ref}>
+      <Parallax pages={2.2} ref={ref}>
         <ParallaxLayer offset={0} speed={1.5}>
           <div className="saturn-container">
             <img src={Saturn} alt="Saturn Cartoon"></img>
@@ -143,7 +143,7 @@ export default function Landing() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={0.5}>
+        <ParallaxLayer offset={1.8} speed={0.5}>
           <div className="p-5 text-lg bg-gradient-to-r from-gray-950 to-transparent text-white z-1">
             <p onClick={() => toggleModal("contact-info")}>
               Contact Me
